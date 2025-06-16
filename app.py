@@ -7,7 +7,7 @@ import re
 
 # Load model and tokenizer
 model = load_model("lstm_new.keras")
-tokenizer = joblib.load('tokenizer.pkl')
+tokenizer = joblib.load('Tokeniser.pkl')
 
 max_length = 100  # As per your training
 
