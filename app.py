@@ -44,14 +44,8 @@ def predict_sentiment(text):
 st.title("LSTM Sentiment Classifier App")
 st.write("Enter your review text below:")
 
-# Input and buttons
-col1, col2 = st.columns([2, 1])
-with col1:
-    user_input = st.text_input("", key="input_text")
-with col2:
-    clear = st.button("Clear")
-    if clear:
-        st.session_state.input_text = ""
+# Text input
+user_input = st.text_input("")
 
 # Predict button logic
 if st.button("Predict") and user_input:
